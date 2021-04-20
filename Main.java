@@ -12,11 +12,11 @@ public class Main {
         System.out.println(matrixA.toString());
         System.out.println(matrixB.toString());
 
+      
         matrixA.swapElements(matrixB);
         matrixA.printArray(matrixA);
         matrixB.swapElements(matrixA);
         matrixB.printArray(matrixB);
-
 
 
 
