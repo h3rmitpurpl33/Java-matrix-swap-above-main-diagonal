@@ -55,14 +55,13 @@ public class Matrix {
     }
 
     public void printArray(Matrix matrix) {
-        for (int i = 0; i < elements.length; ++i) {
-            for (int j = 0; j < elements[0].length; ++j) {
                 System.out.println(matrix);
             }
-            
-        }
-    }
 }
+            
+        
+    
+
 
 
 
