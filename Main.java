@@ -9,26 +9,15 @@ public class Main {
         matrixA.RandomElements(-10, 10);
         matrixB.RandomElements(-10, 10);
 
+
         System.out.println(matrixA.toString());
         System.out.println(matrixB.toString());
 
-      
-        matrixA.swapElements(matrixB);
-        matrixA.printArray(matrixA);
+
         matrixB.swapElements(matrixA);
         matrixB.printArray(matrixB);
 
+        matrixA.swapElements1(matrixA);
+        matrixA.printArray(matrixA);
 
 
-
-
-
-
-
-
-
-
-
-
-    }
-}
