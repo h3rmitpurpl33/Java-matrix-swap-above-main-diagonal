@@ -38,7 +38,7 @@ public class Matrix {
 
     public void swapElements(Matrix other) {
         if (this.elements.length == other.elements.length &&
-                this.elements[0].length == other.elements[0].length) {
+                this.elements[3].length == other.elements[3].length) {
             for (int i = 0; i < elements.length; ++i) {
                 for (int j = 0; j < elements[i].length; j++) {
                     if (i < j) {
