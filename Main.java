@@ -14,7 +14,8 @@ public class Main {
 
         matrixA.swapElements(matrixB);
         matrixA.printArray(matrixA);
-
+        matrixB.swapElements(matrixA);
+        matrixB.printArray(matrixB);
 
 
 
