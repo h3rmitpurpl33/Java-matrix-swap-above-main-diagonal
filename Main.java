@@ -18,6 +18,6 @@ public class Main {
         matrixB.printArray(matrixB);
 
         matrixA.swapElements1(matrixA);
-        matrixA.printArray(matrixA);
+        matrixA.printArray1(matrixA);
 
 
