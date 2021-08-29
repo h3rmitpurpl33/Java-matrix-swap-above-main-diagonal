@@ -37,27 +37,28 @@ public class Matrix {
 
 
     public void swapElements(Matrix other) {
-        for ( int i = 0; i < elements.length; ++i)
-        if (this.elements.length == other.elements.length &&
-                this.elements[i+1].length == other.elements[i+1].length) {
-            for ( i = 0; i < elements.length; ++i) {
-                for (int j = 0; j < elements[i].length; j++) {
-                    if (i < j) {
-                        int temp = elements[i][j];
-                        this.elements[i][j] = other.elements[i][j];
-                        other.elements[i][j] = temp;
+        for (int i = 0; i < elements.length; ++i)
+            if (this.elements.length == other.elements.length &&
+                    this.elements[i + 1].length == other.elements[i + 1].length) {
+                for (i = 0; i < elements.length; ++i) {
+                    for (int j = 0; j < elements[i].length; j++) {
+                        if (i < j) {
+                            int temp = elements[i][j];
+                            this.elements[i][j] = other.elements[i][j];
+                            other.elements[i][j] = temp;
+                        }
                     }
                 }
+            } else {
+                System.out.println("NumberofExceptions");
             }
-        } else {
-            System.out.println("not valid");
-        }
     }
+
     public void swapElements1(Matrix other) {
-        for ( int i = 0; i < elements.length; ++i)
+        for (int i = 0; i < elements.length; ++i)
             if (this.elements.length == other.elements.length &&
-                    this.elements[i+1].length == other.elements[i+1].length) {
-                for ( i = 0; i < elements.length; ++i) {
+                    this.elements[i + 1].length == other.elements[i + 1].length) {
+                for (i = 0; i < elements.length; ++i) {
                     for (int j = 0; j < elements[i].length; j++) {
                         if (i < j) {
                             int temp = elements[i][j];
@@ -72,10 +73,13 @@ public class Matrix {
     }
 
     public void printArray(Matrix matrix) {
-                System.out.println(matrix);
-            }
+        System.out.println(matrix);
+    }
+
     public void printArray1(Matrix matrix) {
         System.out.println(matrix);
     }
 
-        }
+}
+
+
